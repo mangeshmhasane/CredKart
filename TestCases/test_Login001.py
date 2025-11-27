@@ -1,6 +1,6 @@
 from Utilities import readconfig
 from PageObject.LoginPage import LoginClass
-from Utilities.readExcel import readExcel
+from Utilities.readExcel import readLoginExcel
 
 class Test_UserLogin001:
     def test_login_001(self, setup):
@@ -9,11 +9,11 @@ class Test_UserLogin001:
 
         filename = "D:\\CAREER\\Pytest Practice\\CredKart 2025-26\\TestData\\Login Test Credentials.xlsx"
         sheetname = "Sheet1"
-        rows = readExcel.get_row_count(filename=filename, sheetname=sheetname)
+        rows = readLoginExcel.get_row_count(filename=filename, sheetname=sheetname)
         for r in range(2, rows+1):
-            userEmail = readExcel.read_data(filename=filename, sheetname=sheetname, row=r, column=1)
-            userPassword = readExcel.read_data(filename=filename, sheetname=sheetname, row=r, column=2)
-            expected_result = readExcel.read_data(filename=filename, sheetname=sheetname, row=r, column=3)
+            userEmail = readLoginExcel.read_data(filename=filename, sheetname=sheetname, row=r, column=1)
+            userPassword = readLoginExcel.read_data(filename=filename, sheetname=sheetname, row=r, column=2)
+            expected_result = readLoginExcel.read_data(filename=filename, sheetname=sheetname, row=r, column=3)
 
             # Open Url
             self.driver.get(readconfig.getLoginUrl())

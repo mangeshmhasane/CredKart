@@ -1,6 +1,6 @@
 import openpyxl
 
-class readExcel:
+class readLoginExcel:
     def get_row_count(filename, sheetname):
         workbook = openpyxl.load_workbook(filename=filename)
         sheet = workbook[sheetname]
