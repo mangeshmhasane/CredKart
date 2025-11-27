@@ -38,14 +38,16 @@ class TestRegister:
             self.ur.ClickonRegisterButton()
 
             # Validate Register Page
-            try:
-                if self.ur.validateRegisterPage() == True and expectedResult == "Pass":
-                    print("Positive Test Passed...")
-                    assert True
-                elif self.ur.validateRegisterPage() == False and expectedResult == "Fail":
-                    print("Negative Test Passed...")
-                    assert True
-            except:
+            if self.ur.validateRegisterPage() == True and expectedResult == "Pass":
+                print("Positive Test Passed...")
+                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Register_Pass_{r}.png")
+                assert True
+            elif self.ur.validateRegisterPage() == False and expectedResult == "Fail":
+                print("Negative Test Passed...")
+                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Register_Pass_{r}.png")
+                assert True
+            else:
                 print("Test Failed: (Expected Result and Actual Result Mismatched...)")
+                self.driver.save_screenshot(f"{readconfig.getFailscreenshotPath()}/Screenshot_Register_Fail_{r}.png")
                 assert False
             self.driver.delete_all_cookies()
