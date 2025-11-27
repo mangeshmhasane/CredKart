@@ -19,11 +19,9 @@ class Test_UserLogin001:
             self.driver.get(readconfig.getLoginUrl())
 
             # Enter Email
-            # self.ul.Enter_Email(readconfig.getLoginEmail())
             self.ul.Enter_Email(userEmail)
 
             # Enter Password
-            # self.ul.Enter_Password(readconfig.getLoginPassword())
             self.ul.Enter_Password(userPassword)
 
             # Click on login Button
