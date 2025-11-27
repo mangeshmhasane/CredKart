@@ -18,3 +18,11 @@ def getLoginPassword():
 @staticmethod
 def  getRegisterUrl():
     return config['user info']['RegisterUrl']
+
+@staticmethod
+def getPassscreenshotPath():
+    return config['user info']['PassScreenshotPath']
+
+@staticmethod
+def getFailscreenshotPath():
+    return config['user info']['FailScreenshotPath']

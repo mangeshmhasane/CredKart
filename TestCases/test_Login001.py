@@ -1,6 +1,7 @@
 from Utilities import readconfig
 from PageObject.LoginPage import LoginClass
 from Utilities.readExcel import readLoginExcel
+from Utilities import screenshot
 
 class Test_UserLogin001:
     def test_login_001(self, setup):
@@ -30,11 +31,14 @@ class Test_UserLogin001:
             # Validate login Page
             if self.ul.ValidateLoginPage() == True and expected_result == "Pass":
                 print("Positive test passed...")
+                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Passed_{r-1}.png")
                 assert True
             elif self.ul.ValidateLoginPage() == False and expected_result == "Fail":
                 print("Negative test passed...")
+                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Passed_{r-1}.png")
                 assert True
             else:
                 print("Test fail (Mismatch between expected result and actual result)")
+                self.driver.save_screenshot(f"{readconfig.getFailscreenshotPath()}/Screenshot_Failed_{r-1}.png")
                 assert False
             self.driver.delete_all_cookies()
