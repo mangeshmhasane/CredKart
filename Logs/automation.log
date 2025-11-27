@@ -1,0 +1,51 @@
+2025-11-27 22:14:48,784 - INFO - Test Started: Login Test
+2025-11-27 22:14:50,545 - INFO - Opened URL
+2025-11-27 22:14:50,689 - INFO - Entered UserEmail
+2025-11-27 22:14:50,733 - INFO - Entered UserPassword
+2025-11-27 22:14:56,696 - INFO - Clicked Login Button
+2025-11-27 22:14:56,701 - INFO - Test Passed: Login Successful
+2025-11-27 22:14:57,339 - INFO - Opened URL
+2025-11-27 22:14:57,383 - INFO - Entered UserEmail
+2025-11-27 22:14:57,419 - INFO - Entered UserPassword
+2025-11-27 22:14:58,516 - INFO - Clicked Login Button
+2025-11-27 22:14:58,548 - INFO - Test Passed: Login Successful
+2025-11-27 22:14:59,102 - INFO - Opened URL
+2025-11-27 22:14:59,138 - INFO - Entered UserEmail
+2025-11-27 22:14:59,172 - INFO - Entered UserPassword
+2025-11-27 22:15:00,097 - INFO - Clicked Login Button
+2025-11-27 22:15:00,105 - INFO - Test Passed: Login Successful
+2025-11-27 22:15:00,796 - INFO - Opened URL
+2025-11-27 22:15:00,841 - INFO - Entered UserEmail
+2025-11-27 22:15:00,877 - INFO - Entered UserPassword
+2025-11-27 22:15:01,750 - INFO - Clicked Login Button
+2025-11-27 22:15:01,761 - INFO - Test Passed: Login Successful
+2025-11-27 22:15:02,367 - INFO - Opened URL
+2025-11-27 22:15:02,389 - INFO - Entered UserEmail
+2025-11-27 22:15:02,431 - INFO - Entered UserPassword
+2025-11-27 22:15:02,553 - INFO - Clicked Login Button
+2025-11-27 22:15:02,566 - INFO - Test Passed: Login Successful
+2025-11-27 22:15:03,268 - INFO - Opened URL
+2025-11-27 22:15:03,303 - INFO - Entered UserEmail
+2025-11-27 22:15:03,343 - INFO - Entered UserPassword
+2025-11-27 22:15:05,048 - INFO - Clicked Login Button
+2025-11-27 22:15:05,052 - INFO - Test Passed: Login Successful
+2025-11-27 22:15:05,662 - INFO - Opened URL
+2025-11-27 22:15:05,728 - INFO - Entered UserEmail
+2025-11-27 22:15:05,756 - INFO - Entered UserPassword
+2025-11-27 22:15:07,354 - INFO - Clicked Login Button
+2025-11-27 22:15:07,434 - INFO - Test Passed: Login Successful
+2025-11-27 22:15:09,810 - INFO - Opened URL
+2025-11-27 22:15:10,200 - INFO - Entered UserEmail
+2025-11-27 22:15:10,987 - INFO - Entered UserPassword
+2025-11-27 22:15:12,136 - INFO - Clicked Login Button
+2025-11-27 22:15:12,151 - INFO - Test Passed: Login Successful
+2025-11-27 22:15:12,756 - INFO - Opened URL
+2025-11-27 22:15:12,778 - INFO - Entered UserEmail
+2025-11-27 22:15:12,801 - INFO - Entered UserPassword
+2025-11-27 22:15:12,914 - INFO - Clicked Login Button
+2025-11-27 22:15:12,925 - INFO - Test Passed: Login Successful
+2025-11-27 22:15:13,585 - INFO - Opened URL
+2025-11-27 22:15:13,626 - INFO - Entered UserEmail
+2025-11-27 22:15:13,664 - INFO - Entered UserPassword
+2025-11-27 22:15:14,534 - INFO - Clicked Login Button
+2025-11-27 22:15:14,562 - INFO - Test Failed: Login Unsuccessful
