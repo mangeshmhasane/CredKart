@@ -25,5 +25,6 @@ def setup(browser):
         print("Invalid Browser, Launching Firefox browser.")
         driver = webdriver.Firefox()
 
-    yield browser
+    driver.maximize_window()
+    yield driver
     driver.quit()

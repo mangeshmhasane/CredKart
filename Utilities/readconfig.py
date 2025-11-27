@@ -1,16 +1,16 @@
 import configparser
-configPath = "D:\\CAREER\\Pytest Practice\\CredKart 2025-26\\1. Configuration\\config.ini"
+configPath = "D:\\CAREER\\Pytest Practice\\CredKart 2025-26\\Configuration\\config.ini"
 config = configparser.ConfigParser()
 config.read(configPath)
 
 @staticmethod
 def getLoginUrl():
-    config['user info']['LoginUrl']
+    return config['user info']['LoginUrl']
 
 @staticmethod
 def getLoginEmail():
-    config['user info']['LoginEmail']
+    return config['user info']['LoginEmail']
 
 @staticmethod
 def getLoginPassword():
-    config['user info']['LoginPassword']
+    return config['user info']['LoginPassword']

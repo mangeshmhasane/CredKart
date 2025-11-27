@@ -7,7 +7,7 @@ class Test_UserLogin001:
         self.ul = LoginClass(self.driver)
 
         # Open Url
-        self.ul.get(readconfig.getLoginUrl())
+        self.driver.get(readconfig.getLoginUrl())
 
         # Enter Email
         self.ul.Enter_Email(readconfig.getLoginEmail())
