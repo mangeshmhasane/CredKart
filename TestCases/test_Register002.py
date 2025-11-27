@@ -10,7 +10,7 @@ class TestRegister:
 
         filename = "D:\\CAREER\\Pytest Practice\\CredKart 2025-26\\TestData\\Register Test Data.xlsx"
         sheetname = "Sheet1"
-        rows = readRegisterExcel.get_row_count()
+        rows = readRegisterExcel.get_row_count(filename=filename, sheetname=sheetname)
 
         for r in range(2, rows+1):
             registerName = readRegisterExcel.read_data(filename=filename, sheetname=sheetname, row=r, column=1)
@@ -19,32 +19,33 @@ class TestRegister:
             registerConfirmPassword = readRegisterExcel.read_data(filename=filename, sheetname=sheetname, row=r, column=4)
             expectedResult = readRegisterExcel.read_data(filename=filename, sheetname=sheetname, row=r, column=5)
 
-        # Open Url
-        self.driver.get(readconfig.getRegisterUrl())
+            # Open Url
+            self.driver.get(readconfig.getRegisterUrl())
 
-        # Enter Register Name
-        self.ur.EnterRegisterName(registerName)
+            # Enter Register Name
+            self.ur.EnterRegisterName(registerName)
 
-        # Enter Register Email
-        self.ur.EnterRegisterEmail(registerEmail)
+            # Enter Register Email
+            self.ur.EnterRegisterEmail(registerEmail)
 
-        # Enter Register Password
-        self.ur.EnterRegisterPassword(registerPassword)
+            # Enter Register Password
+            self.ur.EnterRegisterPassword(registerPassword)
 
-        # Enter Register Confirm Password
-        self.ur.EnterRegisterConfirmPassword(registerConfirmPassword)
+            # Enter Register Confirm Password
+            self.ur.EnterRegisterConfirmPassword(registerConfirmPassword)
 
-        # Click on Register Button
-        self.ur.ClickonRegisterButton()
+            # Click on Register Button
+            self.ur.ClickonRegisterButton()
 
-        # Validate Register Page
-        try:
-            if self.ur.validateRegisterPage() == True and expectedResult == "Pass":
-                print("Positive Test Passed...")
-                assert True
-            elif self.ur.validateRegisterPage() == False and expectedResult == "Fail":
-                print("Negative Test Passed...")
-                assert True
-        except:
-            print("Test Failed: (Expected Result and Actual Result Mismatched...)")
-            assert False
+            # Validate Register Page
+            try:
+                if self.ur.validateRegisterPage() == True and expectedResult == "Pass":
+                    print("Positive Test Passed...")
+                    assert True
+                elif self.ur.validateRegisterPage() == False and expectedResult == "Fail":
+                    print("Negative Test Passed...")
+                    assert True
+            except:
+                print("Test Failed: (Expected Result and Actual Result Mismatched...)")
+                assert False
+            self.driver.delete_all_cookies()

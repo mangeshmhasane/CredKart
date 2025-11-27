@@ -6,7 +6,7 @@ class RegisterClass:
     registerPasswordID = (By.ID, "password")
     registerConfirmPasswordID = (By.ID, "password-confirm")
     registerButtonXPATH = (By.XPATH, "//button[@type = 'submit']")
-    validateRegisterPage = (By.XPATH, "//h2[text() = 'CredKart']")
+    validateRegisterPageXPATH = (By.XPATH, "//h2[text() = 'CredKart']")
 
     def __init__(self, driver):
         self.driver = driver
@@ -21,14 +21,14 @@ class RegisterClass:
         self.driver.find_element(*RegisterClass.registerPasswordID).send_keys(Password)
     
     def EnterRegisterConfirmPassword(self, Confirm_password):
-        self.driver.find_element(*RegisterClass.EnterRegisterConfirmPassword).send_keys(Confirm_password)
+        self.driver.find_element(*RegisterClass.registerConfirmPasswordID).send_keys(Confirm_password)
     
     def ClickonRegisterButton(self):
         self.driver.find_element(*RegisterClass.registerButtonXPATH).click()
     
     def validateRegisterPage(self):
         try:
-            self.driver.find_element(*RegisterClass.validateRegisterPage)
+            self.driver.find_element(*RegisterClass.validateRegisterPageXPATH)
             return True
         except:
             return False
