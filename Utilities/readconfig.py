@@ -14,3 +14,7 @@ def getLoginEmail():
 @staticmethod
 def getLoginPassword():
     return config['user info']['LoginPassword']
+
+@staticmethod
+def  getRegisterUrl():
+    return config['user info']['RegisterUrl']
