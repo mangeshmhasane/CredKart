@@ -4,7 +4,7 @@ from Utilities.readExcel import readLoginExcel
 from Utilities.logger import get_logger
 
 class Test_UserLogin001:
-    def test_login_001(self, setup):
+    def test_login_002(self, setup):
         self.driver = setup
         self.ul = LoginClass(self.driver)
         logger = get_logger()
