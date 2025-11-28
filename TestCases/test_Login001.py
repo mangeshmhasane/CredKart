@@ -8,7 +8,7 @@ class Test_UserLogin001:
         self.driver = setup
         self.ul = LoginClass(self.driver)
         logger = get_logger()
-        logger.info("Test Started: Login Test")
+        logger.info("Test Started: test_test_login001")
         
         filename = "D:\\CAREER\\Pytest Practice\\CredKart 2025-26\\TestData\\Login Test Credentials.xlsx"
         sheetname = "Sheet1"
@@ -37,12 +37,12 @@ class Test_UserLogin001:
             # Validate login Page
             if self.ul.ValidateLoginPage() == True and expected_result == "Pass":
                 print("Positive test passed...")
-                logger.info("Test Passed: Login Successful")
+                logger.info("Posite Test Passed: Login Successful")
                 self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Test_Login_Passed_{r-1}.png")
                 assert True
             elif self.ul.ValidateLoginPage() == False and expected_result == "Fail":
                 print("Negative test passed...")
-                logger.info("Test Passed: Login Successful")
+                logger.info("Negative Test Passed: Login Successful")
                 self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Test_Login_Passed_{r-1}.png")
                 assert True
             else:
