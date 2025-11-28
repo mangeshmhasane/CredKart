@@ -36,18 +36,18 @@ class Test_UserLogin001:
 
             # Validate login Page
             if self.ul.ValidateLoginPage() == True and expected_result == "Pass":
-                print("Positive test passed...")
-                logger.info("Posite Test Passed: Login Successful")
+                print(f"Positive test_{r-1} passed...")
+                logger.info(f"Posite Test_{r-1} Passed: Login Successful")
                 self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Test_Login_Passed_{r-1}.png")
                 assert True
             elif self.ul.ValidateLoginPage() == False and expected_result == "Fail":
-                print("Negative test passed...")
-                logger.info("Negative Test Passed: Login Successful")
+                print(f"Negative test_{r-1} passed...")
+                logger.info(f"Negative Test_{r-1} Passed: Login Successful")
                 self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Test_Login_Passed_{r-1}.png")
                 assert True
             else:
-                print("Test fail (Mismatch between expected result and actual result)")
-                logger.info("Test Failed: Login Unsuccessful")
+                print(f"Test_{r-1} fail (Mismatch between expected result and actual result)")
+                logger.info(f"Test_{r-1} Failed: Login Unsuccessful")
                 self.driver.save_screenshot(f"{readconfig.getFailscreenshotPath()}/Screenshot_Test_Login_Failed_{r-1}.png")
                 assert False
             self.driver.delete_all_cookies()

@@ -47,18 +47,18 @@ class TestRegister:
 
             # Validate Register Page
             if self.ur.validateRegisterPage() == True and expectedResult == "Pass":
-                print("Positive Test Passed...")
-                logger.info("Positive test passed: Registration Successful...")
-                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Register_Pass_{r}.png")
+                print(f"Positive Test_{r-1} Passed...")
+                logger.info(f"Positive test_{r-1} passed: Registration Successful...")
+                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Register_Passed_{r-1}.png")
                 assert True
             elif self.ur.validateRegisterPage() == False and expectedResult == "Fail":
-                print("Negative Test Passed...")
-                logger.info("Negative Test Passed: Registration Unsuccessful...")
-                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Register_Pass_{r}.png")
+                print(f"Negative Test_{r-1} Passed...")
+                logger.info(f"Negative Test_{r-1} Passed: Registration Unsuccessful...")
+                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Register_Passed_{r-1}.png")
                 assert True
             else:
-                print("Test Failed: (Expected Result and Actual Result Mismatched...)")
-                logger.info("Test Failed...")
-                self.driver.save_screenshot(f"{readconfig.getFailscreenshotPath()}/Screenshot_Register_Fail_{r}.png")
+                print(f"Test_{r-1} Failed: (Expected Result and Actual Result Mismatched...)")
+                logger.info(f"Test_{r-1} Failed...")
+                self.driver.save_screenshot(f"{readconfig.getFailscreenshotPath()}/Screenshot_Register_Failed_{r-1}.png")
                 assert False
             self.driver.delete_all_cookies()
