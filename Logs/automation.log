@@ -155,3 +155,54 @@
 2025-11-28 11:35:26,411 - INFO - Register Confirm-Password Entered...
 2025-11-28 11:35:28,096 - INFO - Clicked on Register button...
 2025-11-28 11:35:28,108 - INFO - Test_16 Failed...
+2025-11-28 11:55:20,560 - INFO - Test Started: test_test_login001
+2025-11-28 11:55:22,309 - INFO - Opened URL
+2025-11-28 11:55:22,430 - INFO - Entered UserEmail
+2025-11-28 11:55:22,472 - INFO - Entered UserPassword
+2025-11-28 11:55:25,252 - INFO - Clicked Login Button
+2025-11-28 11:55:25,262 - INFO - Posite Test_1 Passed: Login Successful
+2025-11-28 11:55:25,917 - INFO - Opened URL
+2025-11-28 11:55:25,975 - INFO - Entered UserEmail
+2025-11-28 11:55:26,010 - INFO - Entered UserPassword
+2025-11-28 11:55:26,926 - INFO - Clicked Login Button
+2025-11-28 11:55:26,941 - INFO - Negative Test_2 Passed: Login Successful
+2025-11-28 11:55:27,666 - INFO - Opened URL
+2025-11-28 11:55:27,708 - INFO - Entered UserEmail
+2025-11-28 11:55:27,743 - INFO - Entered UserPassword
+2025-11-28 11:55:28,630 - INFO - Clicked Login Button
+2025-11-28 11:55:28,645 - INFO - Negative Test_3 Passed: Login Successful
+2025-11-28 11:55:29,290 - INFO - Opened URL
+2025-11-28 11:55:29,317 - INFO - Entered UserEmail
+2025-11-28 11:55:29,334 - INFO - Entered UserPassword
+2025-11-28 11:55:30,266 - INFO - Clicked Login Button
+2025-11-28 11:55:30,283 - INFO - Negative Test_4 Passed: Login Successful
+2025-11-28 11:55:30,860 - INFO - Opened URL
+2025-11-28 11:55:30,882 - INFO - Entered UserEmail
+2025-11-28 11:55:30,925 - INFO - Entered UserPassword
+2025-11-28 11:55:31,038 - INFO - Clicked Login Button
+2025-11-28 11:55:31,049 - INFO - Negative Test_5 Passed: Login Successful
+2025-11-28 11:55:31,690 - INFO - Opened URL
+2025-11-28 11:55:31,723 - INFO - Entered UserEmail
+2025-11-28 11:55:31,749 - INFO - Entered UserPassword
+2025-11-28 11:55:33,344 - INFO - Clicked Login Button
+2025-11-28 11:55:33,348 - INFO - Posite Test_6 Passed: Login Successful
+2025-11-28 11:55:33,974 - INFO - Opened URL
+2025-11-28 11:55:34,014 - INFO - Entered UserEmail
+2025-11-28 11:55:34,045 - INFO - Entered UserPassword
+2025-11-28 11:55:35,173 - INFO - Clicked Login Button
+2025-11-28 11:55:35,183 - INFO - Negative Test_7 Passed: Login Successful
+2025-11-28 11:55:35,762 - INFO - Opened URL
+2025-11-28 11:55:35,794 - INFO - Entered UserEmail
+2025-11-28 11:55:35,827 - INFO - Entered UserPassword
+2025-11-28 11:55:36,790 - INFO - Clicked Login Button
+2025-11-28 11:55:36,798 - INFO - Negative Test_8 Passed: Login Successful
+2025-11-28 11:55:37,363 - INFO - Opened URL
+2025-11-28 11:55:37,382 - INFO - Entered UserEmail
+2025-11-28 11:55:37,413 - INFO - Entered UserPassword
+2025-11-28 11:55:37,515 - INFO - Clicked Login Button
+2025-11-28 11:55:37,525 - INFO - Negative Test_9 Passed: Login Successful
+2025-11-28 11:55:38,129 - INFO - Opened URL
+2025-11-28 11:55:38,167 - INFO - Entered UserEmail
+2025-11-28 11:55:38,204 - INFO - Entered UserPassword
+2025-11-28 11:55:39,055 - INFO - Clicked Login Button
+2025-11-28 11:55:39,063 - INFO - Test_10 Failed: Login Unsuccessful

@@ -2,6 +2,7 @@ from Utilities import readconfig
 from PageObject.LoginPage import LoginClass
 from Utilities.readExcel import readLoginExcel
 from Utilities.logger import get_logger
+from Utilities import screenshot
 
 class Test_UserLogin001:
     def test_login_002(self, setup):
@@ -9,6 +10,7 @@ class Test_UserLogin001:
         self.ul = LoginClass(self.driver)
         logger = get_logger()
         logger.info("Test Started: test_test_login001")
+        current_datetime = screenshot.get_current_datetime()
         
         filename = "D:\\CAREER\\Pytest Practice\\CredKart 2025-26\\TestData\\Login Test Credentials.xlsx"
         sheetname = "Sheet1"
@@ -38,16 +40,16 @@ class Test_UserLogin001:
             if self.ul.ValidateLoginPage() == True and expected_result == "Pass":
                 print(f"Positive test_{r-1} passed...")
                 logger.info(f"Posite Test_{r-1} Passed: Login Successful")
-                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Test_Login_Passed_{r-1}.png")
+                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Test_Login_Passed_{r-1}_{current_datetime}.png")
                 assert True
             elif self.ul.ValidateLoginPage() == False and expected_result == "Fail":
                 print(f"Negative test_{r-1} passed...")
                 logger.info(f"Negative Test_{r-1} Passed: Login Successful")
-                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Test_Login_Passed_{r-1}.png")
+                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Test_Login_Passed_{r-1}_{current_datetime}.png")
                 assert True
             else:
                 print(f"Test_{r-1} fail (Mismatch between expected result and actual result)")
                 logger.info(f"Test_{r-1} Failed: Login Unsuccessful")
-                self.driver.save_screenshot(f"{readconfig.getFailscreenshotPath()}/Screenshot_Test_Login_Failed_{r-1}.png")
+                self.driver.save_screenshot(f"{readconfig.getFailscreenshotPath()}/Screenshot_Test_Login_Failed_{r-1}_{current_datetime}.png")
                 assert False
             self.driver.delete_all_cookies()

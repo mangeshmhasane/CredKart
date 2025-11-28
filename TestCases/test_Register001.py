@@ -2,6 +2,7 @@ from Utilities import readconfig
 from Utilities.readExcel import readRegisterExcel
 from PageObject.RegisterPage import RegisterClass
 from Utilities.logger import get_logger
+from Utilities import screenshot
 
 class TestRegister:
     def test_Register001(self, setup):
@@ -9,6 +10,7 @@ class TestRegister:
         logger = get_logger()
         logger.info("Test Started: test_Register002")
         self.ur = RegisterClass(self.driver)
+        current_datetime = screenshot.get_current_datetime()
 
         filename = "D:\\CAREER\\Pytest Practice\\CredKart 2025-26\\TestData\\Register Test Data.xlsx"
         sheetname = "Sheet1"
@@ -49,16 +51,16 @@ class TestRegister:
             if self.ur.validateRegisterPage() == True and expectedResult == "Pass":
                 print(f"Positive Test_{r-1} Passed...")
                 logger.info(f"Positive test_{r-1} passed: Registration Successful...")
-                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Register_Passed_{r-1}.png")
+                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Register_Passed_{r-1}_{current_datetime}.png")
                 assert True
             elif self.ur.validateRegisterPage() == False and expectedResult == "Fail":
                 print(f"Negative Test_{r-1} Passed...")
                 logger.info(f"Negative Test_{r-1} Passed: Registration Unsuccessful...")
-                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Register_Passed_{r-1}.png")
+                self.driver.save_screenshot(f"{readconfig.getPassscreenshotPath()}/Screenshot_Register_Passed_{r-1}_{current_datetime}.png")
                 assert True
             else:
                 print(f"Test_{r-1} Failed: (Expected Result and Actual Result Mismatched...)")
                 logger.info(f"Test_{r-1} Failed...")
-                self.driver.save_screenshot(f"{readconfig.getFailscreenshotPath()}/Screenshot_Register_Failed_{r-1}.png")
+                self.driver.save_screenshot(f"{readconfig.getFailscreenshotPath()}/Screenshot_Register_Failed_{r-1}_{current_datetime}.png")
                 assert False
             self.driver.delete_all_cookies()
