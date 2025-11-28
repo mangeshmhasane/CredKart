@@ -1,0 +1,51 @@
+[32mINFO    [0m automation:test_Login002.py:12 Test Started: test_test_login001
+[32mINFO    [0m automation:test_Login002.py:25 Opened URL
+[32mINFO    [0m automation:test_Login002.py:29 Entered UserEmail
+[32mINFO    [0m automation:test_Login002.py:33 Entered UserPassword
+[32mINFO    [0m automation:test_Login002.py:37 Clicked Login Button
+[32mINFO    [0m automation:test_Login002.py:42 Posite Test_1 Passed: Login Successful
+[32mINFO    [0m automation:test_Login002.py:25 Opened URL
+[32mINFO    [0m automation:test_Login002.py:29 Entered UserEmail
+[32mINFO    [0m automation:test_Login002.py:33 Entered UserPassword
+[32mINFO    [0m automation:test_Login002.py:37 Clicked Login Button
+[32mINFO    [0m automation:test_Login002.py:47 Negative Test_2 Passed: Login Successful
+[32mINFO    [0m automation:test_Login002.py:25 Opened URL
+[32mINFO    [0m automation:test_Login002.py:29 Entered UserEmail
+[32mINFO    [0m automation:test_Login002.py:33 Entered UserPassword
+[32mINFO    [0m automation:test_Login002.py:37 Clicked Login Button
+[32mINFO    [0m automation:test_Login002.py:47 Negative Test_3 Passed: Login Successful
+[32mINFO    [0m automation:test_Login002.py:25 Opened URL
+[32mINFO    [0m automation:test_Login002.py:29 Entered UserEmail
+[32mINFO    [0m automation:test_Login002.py:33 Entered UserPassword
+[32mINFO    [0m automation:test_Login002.py:37 Clicked Login Button
+[32mINFO    [0m automation:test_Login002.py:47 Negative Test_4 Passed: Login Successful
+[32mINFO    [0m automation:test_Login002.py:25 Opened URL
+[32mINFO    [0m automation:test_Login002.py:29 Entered UserEmail
+[32mINFO    [0m automation:test_Login002.py:33 Entered UserPassword
+[32mINFO    [0m automation:test_Login002.py:37 Clicked Login Button
+[32mINFO    [0m automation:test_Login002.py:47 Negative Test_5 Passed: Login Successful
+[32mINFO    [0m automation:test_Login002.py:25 Opened URL
+[32mINFO    [0m automation:test_Login002.py:29 Entered UserEmail
+[32mINFO    [0m automation:test_Login002.py:33 Entered UserPassword
+[32mINFO    [0m automation:test_Login002.py:37 Clicked Login Button
+[32mINFO    [0m automation:test_Login002.py:42 Posite Test_6 Passed: Login Successful
+[32mINFO    [0m automation:test_Login002.py:25 Opened URL
+[32mINFO    [0m automation:test_Login002.py:29 Entered UserEmail
+[32mINFO    [0m automation:test_Login002.py:33 Entered UserPassword
+[32mINFO    [0m automation:test_Login002.py:37 Clicked Login Button
+[32mINFO    [0m automation:test_Login002.py:47 Negative Test_7 Passed: Login Successful
+[32mINFO    [0m automation:test_Login002.py:25 Opened URL
+[32mINFO    [0m automation:test_Login002.py:29 Entered UserEmail
+[32mINFO    [0m automation:test_Login002.py:33 Entered UserPassword
+[32mINFO    [0m automation:test_Login002.py:37 Clicked Login Button
+[32mINFO    [0m automation:test_Login002.py:47 Negative Test_8 Passed: Login Successful
+[32mINFO    [0m automation:test_Login002.py:25 Opened URL
+[32mINFO    [0m automation:test_Login002.py:29 Entered UserEmail
+[32mINFO    [0m automation:test_Login002.py:33 Entered UserPassword
+[32mINFO    [0m automation:test_Login002.py:37 Clicked Login Button
+[32mINFO    [0m automation:test_Login002.py:47 Negative Test_9 Passed: Login Successful
+[32mINFO    [0m automation:test_Login002.py:25 Opened URL
+[32mINFO    [0m automation:test_Login002.py:29 Entered UserEmail
+[32mINFO    [0m automation:test_Login002.py:33 Entered UserPassword
+[32mINFO    [0m automation:test_Login002.py:37 Clicked Login Button
+[32mINFO    [0m automation:test_Login002.py:52 Test_10 Failed: Login Unsuccessful
