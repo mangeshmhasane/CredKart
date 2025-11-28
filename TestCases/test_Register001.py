@@ -4,7 +4,7 @@ from PageObject.RegisterPage import RegisterClass
 from Utilities.logger import get_logger
 
 class TestRegister:
-    def test_Register002(self, setup):
+    def test_Register001(self, setup):
         self.driver = setup
         logger = get_logger()
         logger.info("Test Started: test_Register002")
