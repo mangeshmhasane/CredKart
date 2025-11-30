@@ -8,7 +8,7 @@ class TestRegister:
     def test_Register001(self, setup):
         self.driver = setup
         logger = get_logger()
-        logger.info("Test Started: test_Register002")
+        logger.info("Test Started: test_Register001")
         self.ur = RegisterClass(self.driver)
         current_datetime = screenshot.get_current_datetime()
 
